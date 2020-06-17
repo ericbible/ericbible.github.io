@@ -1,0 +1,40 @@
+body {
+  background-color: #242f44;
+  color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #242f44;
+	display: table;
+	width: 100%;
+}
+
+nav li {
+	display: table-cell
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: white;
+	color: #8c6b48;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	}
+	
+
