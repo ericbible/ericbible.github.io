@@ -19,7 +19,6 @@ nav li {
 }
 
 li a {
-	display: flex;
 	color: white;
 	text-align: center;
 	padding: 30px 30px;
