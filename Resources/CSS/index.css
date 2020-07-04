@@ -4,36 +4,41 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-nav ul {
+.navigation{
+	background-color: #242f44;
+	text-align:center;
+}
+
+.navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #242f44;
 	display: inline-flex;
 	width: 100%;
 }
 
-nav li {
+.navigatuion ul li {
 	width: 120px;
 	margin: 15px;
 	padding: 15px;
 }
 
-li a {
+.navigation ul li a {
 	color: white;
 	text-align: center;
 	padding: 30px 30px;
 	text-decoration: none;
 }
 
-li a:hover {
+.navigation ul li a:hover {
 	background-color: white;
-	color: #8c6b48;
+	color: #242f44;
+	border-radius: 3px;
 }
 
 
-nav {
+.navigation nav {
 	position: fixed;
 	top: 0;
 	}
