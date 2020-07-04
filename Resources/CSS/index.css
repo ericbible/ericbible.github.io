@@ -10,12 +10,14 @@ nav ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #242f44;
-	display: table;
+	display: inline-flex;
 	width: 100%;
 }
 
 nav li {
-	display: table-cell
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
 }
 
 li a {
