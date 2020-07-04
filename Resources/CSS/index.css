@@ -1,7 +1,7 @@
 body {
   background-color: #242f44;
   color: white;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navigation{
@@ -42,7 +42,34 @@ body {
 	top: 0;
 	}
 
-.html-sub-menu {
+.navigation .fa {
+	margin-right: 8px;
+}
+
+.sub-menu {
 	display: none;
 }
 
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
