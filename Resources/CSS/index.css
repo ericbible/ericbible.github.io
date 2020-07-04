@@ -37,5 +37,8 @@ nav {
 	position: fixed;
 	top: 0;
 	}
-	
+
+.html-sub-menu {
+	display: none;
+}
 
