@@ -1,37 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
   background-color: #242f44;
   color: white;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.navigation{
 	background-color: #242f44;
-	display: table;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 }
 
-nav li {
-	display: table-cell
+.navigation ul {
+	display: inline-flex;
+	list-style-type: none;
+	justify-content: center;
+	width: 100%;
 }
 
-li a {
-	display: block;
+.navigation ul li {
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation ul li a {
 	color: white;
 	text-align: center;
-	padding: 30px 30px;
 	text-decoration: none;
 }
 
-li a:hover {
+.navigation ul li a:hover {
 	background-color: white;
-	color: #8c6b48;
+	color: #242f44;
+	border-radius: 3px;
 }
 
+.navigation .fa {
+	margin: 0 8px 0 4px;
+}
 
+.sub-menu {
+	display: none;
+}
+
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	background-color: #6e8191;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+.body {
+  margin-top: 50px;
+}
 
 header {
   text-align: center;
@@ -71,9 +118,7 @@ ul {
   width: 100%;
 }
 
-li {
-	display: table-cell
-}
+
 th {
   border: 2px solid #8c6b48;
 }
@@ -114,8 +159,4 @@ footer h3 {
   width: 150px;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  }
   

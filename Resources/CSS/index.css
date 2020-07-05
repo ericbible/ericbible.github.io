@@ -13,12 +13,17 @@ body {
 .navigation{
 	background-color: #242f44;
 	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .navigation ul {
 	display: inline-flex;
 	list-style-type: none;
 	justify-content: center;
+	width: 100%;
 }
 
 .navigation ul li {
@@ -39,14 +44,8 @@ body {
 	border-radius: 3px;
 }
 
-
-.navigation nav {
-	position: fixed;
-	top: 0;
-	}
-
 .navigation .fa {
-	margin-right: 8px;
+	margin: 0 8px 0 4px;
 }
 
 .sub-menu {
@@ -62,13 +61,13 @@ body {
 .navigation ul li:hover .sub-menu ul {
 	display: block;
 	margin: 10px;
+	background-color: #6e8191;
 }
 
 .navigation ul li:hover .sub-menu ul li {
 	width: 150px;
 	padding: 10px;
 	border-bottom: 1px dotted #fff;
-	background: transparent;
 	border-radius: 0;
 	text-align: left;
 }
