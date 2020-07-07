@@ -18,11 +18,88 @@ nav {
 
 nav li {
   color: #fff;
-  display: inline-block;
+  display: inline-flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 12px;
   width: 80px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation{
+	background-color: #333;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navigation ul {
+	display: inline-flex;
+	list-style-type: none;
+	justify-content: center;
+	width: 100%;
+}
+
+.navigation ul li {
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation ul li a {
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation ul li a:hover {
+	background-color: #fff;
+	color: #333333;
+	border-radius: 3px;
+}
+
+.navigation .fa {
+  margin: 0 8px 0 -2px;
+  color: #fff;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	background-color: #333333;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+.body {
+  margin-top: 100px;
 }
 
 main {

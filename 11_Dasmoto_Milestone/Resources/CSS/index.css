@@ -18,6 +18,7 @@ color: white;
 font-family: Helvetica;
 font-size: 32px;
 font-weight: bold;
+margin-top: 75px;
 }
 
 h2.brushes {
@@ -46,31 +47,87 @@ body {
 img {
   height: 250px;
   width: 250px;
+  margin-top: 15px;
 }
 
-nav ul {
-	list-style-type: none;
+p {
+  margin-top: 15px;
+}
+
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+}
+
+.navigation{
 	background-color: white;
-	display: table;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 }
 
-nav li {
-	display: table-cell
+.navigation ul {
+	display: inline-flex;
+	list-style-type: none;
+	justify-content: center;
+	width: 100%;
 }
 
-li a {
-	display: block;
-	color: gray;
+.navigation ul li {
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation ul li a {
+	color: grey;
 	text-align: center;
-	padding: 30px 30px;
 	text-decoration: none;
 }
 
-nav {
-position: fixed;
-top: 0;
+.navigation ul li a:hover {
+	background-color: #fff;
+	color: grey;
+	border-radius: 3px;
 }
+
+.navigation .fa {
+  margin: 0 8px 0 4px;
+  color: grey;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	background-color: white;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted grey;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+.body {
+  margin-top: 79px;
+}
+
