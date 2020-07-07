@@ -1,32 +1,83 @@
-body {
-	background: #e6e6e6;
-}
-
-nav ul {
-	list-style-type: none;
+* {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	box-sizing: border-box;
+}
+
+body {
+	background: #e6e6e6;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
 	background-color: #010e80;
-	display: table;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 }
 
-nav li {
-	display: table-cell
+.navigation ul {
+	display: inline-flex;
+	list-style-type: none;
+	justify-content: center;
+	width: 100%;
 }
 
-li a {
-	display: block;
+.navigation ul li {
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation ul li a {
 	color: white;
 	text-align: center;
-	padding: 30px 30px;
 	text-decoration: none;
 }
 
-li a:hover {
+.navigation ul li a:hover {
 	background-color: #e6e6e6;
 	color: #010e80;
+	border-radius: 3px;
+}
+
+.navigation .fa {
+  margin: 0 8px 0 4px;
+  color: white;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	background-color: #010e80;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+.body {
+  margin-top: 100px;
 }
 
 h2 a {
@@ -54,18 +105,21 @@ article {
 	font-size: 18px;
 	line-height: 32px;
 }
-
+/* img, aside and footer are wonky
+need to research CSS to fix partly trans-
+parent nav and a footer nav that won't
+work fixed*/
 img {
 	width: 400px;
 	height: 300px;
-  position:relative;
+  position: relative;
   right:28px;
 }
 
 aside {
 	left: 10px;
 	border: 1px solid black;
-	padding: 15px;
+	padding: 24px;
 	max-width: 80%;
 	position: relative;
 	border-color: #010e80;
@@ -76,7 +130,7 @@ aside {
 footer {
 	position: relative;
 	width: 100%;
-	bottom: -100px;
+	bottom: -50px;
 	background-color: #010e80;
 }
 
@@ -113,9 +167,4 @@ embed {
 	width: 400px;
 	height: 458px;
   padding:15px;
-}
-
-nav {
-position: fixed;
-top: 0;
 }

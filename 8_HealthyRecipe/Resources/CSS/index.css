@@ -12,6 +12,7 @@ img {
 
 .ingredients li{
   list-style: square;
+  margin-left: 30px;
 }
 
 p.time {
@@ -24,47 +25,94 @@ p.time {
 
 h1,
 h2,
-p,
-li{
-  font-family: Helvetica;
+p{
+ margin-top: 10px; 
+}
+
+li {
+	margin-left: 30px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: #242f44;
-  color: white;
+	background-color: #242f44;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.navigation{
 	background-color: #242f44;
-	display: table;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 }
 
-nav li {
-	display: table-cell
+.navigation ul {
+	display: inline-flex;
+	list-style-type: none;
+	justify-content: center;
+	width: 100%;
 }
 
-li a {
-	display: block;
+.navigation ul li {
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation ul li a {
 	color: white;
 	text-align: center;
-	padding: 30px 30px;
 	text-decoration: none;
 }
 
-li a:hover {
-	background-color: white;
+.navigation ul li a:hover {
+	background-color: #fff;
 	color: #242f44;
+	border-radius: 3px;
 }
 
+.navigation .fa {
+  margin: 0 8px 0 4px;
+  color: white;
+}
 
-nav {
-	position: fixed;
-	top: 0;
-	}
-	
+.sub-menu {
+	display: none;
+}
+
+.navigation ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-left: -15px;
+}
+
+.navigation ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	background-color: #242f44;
+}
+
+.navigation ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navigation ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+.body {
+  margin-top: 100px;
+}
 
