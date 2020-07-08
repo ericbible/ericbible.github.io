@@ -13,7 +13,7 @@ body {
   display: block;
   background-color: black;
   position: fixed;
-  top: 79px;
+  top: 110px;
   border-bottom: 1px solid seashell;
 }
 
@@ -131,26 +131,28 @@ footer {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .navigation ul {
 	display: inline-flex;
 	list-style-type: none;
 	justify-content: center;
-	width: 100%;
+  width: 100%;
 }
 
 .navigation ul li {
 	width: 160px;
 	margin: 15px;
-	padding: 15px;
+  padding: 15px;
 }
 
 .navigation ul li a {
 	color: seashell;
 	text-align: center;
-	text-decoration: none;
+  text-decoration: none;
+  z-index: 10;
 }
 
 .navigation ul li a:hover {

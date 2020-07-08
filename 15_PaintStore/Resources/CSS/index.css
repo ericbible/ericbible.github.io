@@ -39,6 +39,8 @@ header {
   align-items: center;
   padding: .5rem 3.75rem;
   background-color: #ff8000;
+  margin-top: 110px;
+  z-index: 1;
 }
 
 header .logo-small {
@@ -71,7 +73,8 @@ nav li:last-child {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .navigation ul {
@@ -84,7 +87,9 @@ nav li:last-child {
 .navigation ul li {
 	width: 160px;
 	margin: 15px;
-	padding: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation ul li a {
@@ -100,7 +105,7 @@ nav li:last-child {
 }
 
 .navigation .fa {
-  margin: 0 8px 0 -2px;
+  margin: 0;
   color: #fff;
 }
 
@@ -111,7 +116,8 @@ nav li:last-child {
 .navigation ul li:hover .sub-menu {
 	display: block;
 	position: absolute;
-	margin-left: -15px;
+  margin-left: -15px;
+  top: 80px;
 }
 
 .navigation ul li:hover .sub-menu ul {

@@ -65,7 +65,9 @@ li {
 .navigation ul li {
 	width: 160px;
 	margin: 15px;
-	padding: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation ul li a {
@@ -81,7 +83,7 @@ li {
 }
 
 .navigation .fa {
-  margin: 0 8px 0 4px;
+  margin: 0;
   color: #fff;
 }
 
@@ -92,7 +94,8 @@ li {
 .navigation ul li:hover .sub-menu {
 	display: block;
 	position: absolute;
-	margin-left: -15px;
+  margin-left: -15px;
+  top: 80px;
 }
 
 .navigation ul li:hover .sub-menu ul {
