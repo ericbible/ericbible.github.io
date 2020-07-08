@@ -78,10 +78,15 @@ body {
 
 .body {
 	margin-top: 100px;
+	opacity: .9;
 }
 
 .body a {
 	color: #6e8191;
+}
+
+.body a:hover {
+	color: #fff;
 }
 
 .top ul {
@@ -96,7 +101,7 @@ body {
 }
 
 .profile, .skills, .experience, .education{
-	border: 1px solid white;
+	border: 1px solid #6e8191;
 	border-radius: 6px;
 	margin: 15px;
 	padding: 15px;
@@ -121,4 +126,30 @@ body {
 
 #underline {
 	border-bottom: 1px white solid;
+}
+
+.social-link {
+  padding: 6px;
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #6e8191;
+  border-radius: 50%;
+  box-shadow: 1px 4px 5px -2px rgba(0, 0, 0, 0.14);
+}
+
+.social-media {
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;;
+}
+
+.social-media li {
+  margin-top: 40px;;
+}
+
+.social-link:hover {
+	border: solid 1px #fff;
 }
