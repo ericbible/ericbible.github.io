@@ -99,12 +99,13 @@ p {
 	margin-top: 24px;
 }
 footer {
-	display: inline-block;
+	display: block;
 	justify-content: center;
 	align-content: center;
 	position: fixed;
 	margin-top: 15px;;
 	bottom: 0;
+	width: 100%;
 }
 
 footer a {
